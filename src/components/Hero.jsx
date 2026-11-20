@@ -5,7 +5,7 @@ export default function Hero() {
         <div className="eyebrow mono">
           <span>
             <i className="dot"></i>
-            {"Naveen Wali / Software Engineer"}
+            {"Naveen Wali / AI Engineer · Full-Stack Developer · Software Engineer"}
           </span>
         </div>
         <h1>
@@ -41,7 +41,7 @@ export default function Hero() {
               {"Reliable underneath."}
             </p>
             <div className="note-bottom mono">
-              <span>{"React → Node → Systems"}</span>
+              <span>{"Full-Stack → AI & RAG → Systems"}</span>
               <span>{"NW / 01"}</span>
             </div>
           </aside>
@@ -50,9 +50,11 @@ export default function Hero() {
       <div className="ticker mono">
         <span>{"My everyday toolkit"}</span>
         <b>{"React"}</b>
+        <b>{"Python"}</b>
         <b>{"TypeScript"}</b>
-        <b>{"Next.js"}</b>
         <b>{"Node.js"}</b>
+        <b>{"WebRTC"}</b>
+        <b>{"RAG & AI"}</b>
         <b>{"MongoDB"}</b>
         <b>{"Redis"}</b>
       </div>

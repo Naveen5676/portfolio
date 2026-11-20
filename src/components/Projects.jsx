@@ -1,4 +1,6 @@
 import BookingDemo from "./BookingDemo";
+import VoiceStudioDemo from "./VoiceStudioDemo";
+
 export default function Projects() {
   return (
     <>
@@ -10,14 +12,64 @@ export default function Projects() {
           </div>
           <p>
             {
-              "Personal projects exploring the practical problems behind everyday products."
+              "Production-grade systems and personal projects exploring real-time AI, distributed architecture, and resilient backends."
             }
           </p>
         </div>
+
+        {/* 01: Voice AI Studio */}
+        <article className="project">
+          <VoiceStudioDemo />
+          <div className="project-copy">
+            <span className="mono">{"01 — Real-Time Voice AI & RAG"}</span>
+            <h3>{"Voice Studio"}</h3>
+            <p>
+              {
+                "An end-to-end conversational Voice AI platform powered by a Python real-time voice worker for sub-second audio pipelines (STT, LLM inference with vector RAG retrieval, and TTS) over WebRTC."
+              }
+            </p>
+            <p>
+              {
+                "Engineered with a React + Material UI studio interface, Express and Better Auth session security, PostgreSQL and Prisma persistence, and customizable agent personalities."
+              }
+            </p>
+            <div className="tags">
+              <span>{"Python"}</span>
+              <span>{"WebRTC"}</span>
+              <span>{"RAG & Vector"}</span>
+              <span>{"FastAPI"}</span>
+              <span>{"React"}</span>
+              <span>{"Express"}</span>
+              <span>{"Better Auth"}</span>
+              <span>{"PostgreSQL"}</span>
+              <span>{"Prisma"}</span>
+            </div>
+            <div className="project-actions">
+              <a
+                className="project-link"
+                href="https://voice-ai-k37a.onrender.com/login"
+                target="_blank"
+                rel="noopener"
+              >
+                {"Try live demo ↗"}
+              </a>
+              <a
+                className="project-link secondary"
+                href="https://github.com/Naveen5676/Voice-AI"
+                target="_blank"
+                rel="noopener"
+              >
+                {"GitHub repository ↗"}
+              </a>
+            </div>
+          </div>
+        </article>
+
+        {/* 02: TicketFlow */}
         <article className="project">
           <BookingDemo />
           <div className="project-copy">
-            <span className="mono">{"01 — Distributed systems"}</span>
+            <span className="mono">{"02 — Distributed systems"}</span>
             <h3>{"TicketFlow"}</h3>
             <p>
               {
@@ -46,6 +98,8 @@ export default function Projects() {
             </a>
           </div>
         </article>
+
+        {/* 03: Dev Tinder */}
         <article className="project">
           <div className="project-visual dev-visual">
             <div className="profile-stack">
@@ -59,7 +113,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="project-copy">
-            <span className="mono">{"02 — Full-stack application"}</span>
+            <span className="mono">{"03 — Full-stack application"}</span>
             <h3>{"Dev Tinder"}</h3>
             <p>
               {

@@ -1,36 +1,49 @@
 import { useState } from "react";
+
 const items = [
   {
-    title: "Reusable interfaces, independent modules",
+    title: "Backend REST APIs, Authentication & RBAC",
     description:
-      "Built a shared React, TypeScript, and Storybook UI library, reducing duplicate component code by an estimated 30%. Worked across 4–5 micro-frontend modules to support parallel development and independent deployments.",
+      "Developed robust REST APIs using Node.js and Express.js with strict request validation, structured error handling, JWT authentication, refresh-token flows, and role-based access control (RBAC) across protected endpoints.",
   },
   {
-    title: "A faster frontend foundation",
+    title: "Asynchronous Messaging & Distributed Caching",
     description:
-      "Migrated legacy Angular applications to Next.js using server-side rendering and optimized bundles. Standardized responsive layouts with Tailwind CSS and managed complex forms with Redux, React Hook Form, and Zod.",
+      "Implemented RabbitMQ for event-driven asynchronous inter-service communication, decoupling backend workflows previously handled via synchronous HTTP. Integrated Redis caching for frequently queried endpoints, slashing redundant database reads and significantly improving API response times.",
   },
   {
-    title: "Services that keep work moving",
+    title: "API Contracts, Integration Testing & CI/CD",
     description:
-      "Built REST APIs using Node.js and Express, with standardized authentication, payload validation, and error handling. Used Redis caching and RabbitMQ messaging to reduce database load and decouple services.",
+      "Established rigorous API contracts and end-to-end integration testing to validate interactions between application layers. Configured automated Jenkins CI/CD pipelines to streamline builds, testing, and continuous deployment across frontend and backend services.",
   },
   {
-    title: "Performance through delivery",
+    title: "Micro-frontends & Shared Design System",
     description:
-      "Used Node.js clustering and worker threads for CPU-intensive processing. Configured CI/CD pipelines to streamline integration and deployment across frontend and backend services.",
+      "Built a centralized UI library using React.js, TypeScript, and Storybook, standardizing typed, reusable components across modules. Engineered 4–5 micro-frontend modules to support parallel team workflows and isolated deployments.",
+  },
+  {
+    title: "SSR Modernization & Resilient State",
+    description:
+      "Migrated legacy Angular applications to Next.js with server-side rendering (SSR) and optimized bundling for faster initial load. Built complex multi-step forms and state flows using Redux, React Hook Form, and Zod schema validation.",
   },
 ];
+
 export default function Experience() {
   const [openIndex, setOpenIndex] = useState(0);
+
   return (
     <>
       <section id="experience">
         <div className="section-head">
           <div>
             <span className="mono">{"02 / Experience"}</span>
-            <h2>{"From UI details to delivery."}</h2>
+            <h2>{"Backend systems to refined interfaces."}</h2>
           </div>
+          <p>
+            {
+              "Designing resilient backend services, asynchronous pipelines, and shared full-stack foundations."
+            }
+          </p>
         </div>
         <div className="experience">
           <div>
@@ -39,7 +52,7 @@ export default function Experience() {
             <span className="company">{"Helo.ai ↗"}</span>
             <p className="intro" style={{ fontSize: "14px" }}>
               {
-                "Building shared frontend foundations and backend services for a product team."
+                "Architecting scalable backend services, caching & event-driven messaging, and high-performance full-stack web applications."
               }
             </p>
           </div>
